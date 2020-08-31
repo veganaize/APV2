@@ -44,7 +44,8 @@
             android:largeScreens="true"
             android:anyDensity="true"/>
 	
-	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 
 	<application android:name="cx.hell.android.pdfview.APVApplication"
             android:icon="@drawable/pdfviewer"
