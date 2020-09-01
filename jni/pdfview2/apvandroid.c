@@ -44,7 +44,7 @@ JNI_OnLoad(JavaVM *jvm, void *reserved) {
 
 
 JNIEXPORT void JNICALL
-Java_cx_hell_android_lib_pdf_PDF_init(
+Java_veganaize_android_lib_pdf_PDF_init(
         JNIEnv *env,
         jobject this,
         jint max_store) {
@@ -83,7 +83,7 @@ Java_cx_hell_android_lib_pdf_PDF_init(
 
 
 JNIEXPORT void JNICALL
-Java_cx_hell_android_lib_pdf_PDF_deinit(
+Java_veganaize_android_lib_pdf_PDF_deinit(
         JNIEnv *env,
         jobject this) {
     __android_log_print(ANDROID_LOG_DEBUG, PDFVIEW_LOG_TAG, "jni deinit");
@@ -97,7 +97,7 @@ Java_cx_hell_android_lib_pdf_PDF_deinit(
  * @param file_name file name to parse.
  */
 JNIEXPORT void JNICALL
-Java_cx_hell_android_lib_pdf_PDF_parseFile(
+Java_veganaize_android_lib_pdf_PDF_parseFile(
         JNIEnv *env,
         jobject jthis,
         jstring file_name,
@@ -147,7 +147,7 @@ Java_cx_hell_android_lib_pdf_PDF_parseFile(
  * Create pdf_t struct from opened file descriptor.
  */
 JNIEXPORT void JNICALL
-Java_cx_hell_android_lib_pdf_PDF_parseFileDescriptor(
+Java_veganaize_android_lib_pdf_PDF_parseFileDescriptor(
         JNIEnv *env,
         jobject jthis,
         jobject fileDescriptor,
@@ -198,7 +198,7 @@ Java_cx_hell_android_lib_pdf_PDF_parseFileDescriptor(
  * @return page count or -1 on error
  */
 JNIEXPORT jint JNICALL
-Java_cx_hell_android_lib_pdf_PDF_getPageCount(
+Java_veganaize_android_lib_pdf_PDF_getPageCount(
 		JNIEnv *env,
 		jobject this) {
 	pdf_t *pdf = NULL;
@@ -212,7 +212,7 @@ Java_cx_hell_android_lib_pdf_PDF_getPageCount(
 
 
 JNIEXPORT jintArray JNICALL
-Java_cx_hell_android_lib_pdf_PDF_renderPage(
+Java_veganaize_android_lib_pdf_PDF_renderPage(
         JNIEnv *env,
         jobject this,
         jint pageno,
@@ -264,7 +264,7 @@ Java_cx_hell_android_lib_pdf_PDF_renderPage(
 
 
 JNIEXPORT jint JNICALL
-Java_cx_hell_android_lib_pdf_PDF_getPageSize(
+Java_veganaize_android_lib_pdf_PDF_getPageSize(
         JNIEnv *env,
         jobject this,
         jint pageno,
@@ -299,7 +299,7 @@ Java_cx_hell_android_lib_pdf_PDF_getPageSize(
 //  * Get document outline.
 //  */
 // JNIEXPORT jobject JNICALL
-// Java_cx_hell_android_lib_pdf_PDF_getOutlineNative(
+// Java_veganaize_android_lib_pdf_PDF_getOutlineNative(
 //         JNIEnv *env,
 //         jobject this) {
 //     int error;
@@ -330,7 +330,7 @@ Java_cx_hell_android_lib_pdf_PDF_getPageSize(
  * Get current netto heap size.
  */
 JNIEXPORT jint JNICALL
-Java_cx_hell_android_lib_pdf_PDF_getHeapSize(
+Java_veganaize_android_lib_pdf_PDF_getHeapSize(
         JNIEnv *env,
         jobject this) {
     pdf_t *pdf = NULL;
@@ -346,7 +346,7 @@ Java_cx_hell_android_lib_pdf_PDF_getHeapSize(
  * Frees memory directly associated with this pdf_t instance. Does not destroy fitz_context.
  */
 JNIEXPORT void JNICALL
-Java_cx_hell_android_lib_pdf_PDF_freeMemory(
+Java_veganaize_android_lib_pdf_PDF_freeMemory(
         JNIEnv *env,
         jobject this) {
     pdf_t *pdf = NULL;
@@ -368,7 +368,7 @@ Java_cx_hell_android_lib_pdf_PDF_freeMemory(
 
 #if 0
 JNIEXPORT void JNICALL
-Java_cx_hell_android_pdfview_PDF_export(
+Java_veganaize_android_pdfview_PDF_export(
         JNIEnv *env,
         jobject this) {
     pdf_t *pdf = NULL;
@@ -437,7 +437,7 @@ Java_cx_hell_android_pdfview_PDF_export(
 
 /* TODO: Specialcase searches for 7-bit text to make them faster */
 JNIEXPORT jobject JNICALL
-Java_cx_hell_android_lib_pdf_PDF_find(
+Java_veganaize_android_lib_pdf_PDF_find(
         JNIEnv *env,
         jobject this,
         jstring text,
@@ -574,7 +574,7 @@ Java_cx_hell_android_lib_pdf_PDF_find(
 //  * Return text of given page.
 //  */
 // JNIEXPORT jobject JNICALL
-// Java_cx_hell_android_lib_pdf_PDF_getText(
+// Java_veganaize_android_lib_pdf_PDF_getText(
 //         JNIEnv *env,
 //         jobject this,
 //         jint pageno) {

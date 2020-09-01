@@ -12,7 +12,7 @@ public class TestOpen extends InstrumentationTestCase {
 	private final static String TAG = "veganaize.android.pdfview.test";
 	
 	public void testOpenByFileDescriptor() throws Throwable {
-        AssetFileDescriptor assetfd = getInstrumentation().getContext().getResources().getAssets().openFd("hell_cx.pdf");
+        AssetFileDescriptor assetfd = getInstrumentation().getContext().getResources().getAssets().openFd("veganaize.pdf");
         FileDescriptor fd = assetfd.getFileDescriptor();
         Exception exception = null;
 		try {
@@ -25,7 +25,7 @@ public class TestOpen extends InstrumentationTestCase {
 	}
 	
 	public void testGetPageCount() throws Throwable {
-	    AssetFileDescriptor assetfd = getInstrumentation().getContext().getResources().getAssets().openFd("hell_cx.pdf");
+	    AssetFileDescriptor assetfd = getInstrumentation().getContext().getResources().getAssets().openFd("veganaize.pdf");
 		FileDescriptor fd = assetfd.getFileDescriptor();
 		Exception exception = null;
 		int pageCount = -1;
