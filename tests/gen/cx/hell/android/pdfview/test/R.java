@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package cx.hell.android.pdfview.test;
+package veganaize.android.pdfview.test;
 
 public final class R {
     public static final class attr {

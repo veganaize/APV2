@@ -1,15 +1,15 @@
-package cx.hell.android.pdfview.test;
+package veganaize.android.pdfview.test;
 
 import java.io.FileDescriptor;
 
 import android.content.res.AssetFileDescriptor;
 import android.test.InstrumentationTestCase;
 import android.util.Log;
-import cx.hell.android.lib.pdf.PDF;
+import veganaize.android.lib.pdf.PDF;
 
 public class TestOpen extends InstrumentationTestCase {
 		
-	private final static String TAG = "cx.hell.android.pdfview.test";
+	private final static String TAG = "veganaize.android.pdfview.test";
 	
 	public void testOpenByFileDescriptor() throws Throwable {
         AssetFileDescriptor assetfd = getInstrumentation().getContext().getResources().getAssets().openFd("hell_cx.pdf");

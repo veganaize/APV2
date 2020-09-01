@@ -1,4 +1,4 @@
-package cx.hell.android.lib.pagesview;
+package veganaize.android.lib.pagesview;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -16,7 +16,7 @@ public class FindResult {
 	/**
 	 * Logging tag.
 	 */
-	public static final String TAG = "cx.hell.android.pdfview";
+	public static final String TAG = "veganaize.android.pdfview";
 	
 	/**
 	 * Page number.

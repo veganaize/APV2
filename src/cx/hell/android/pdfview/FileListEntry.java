@@ -1,4 +1,4 @@
-package cx.hell.android.pdfview;
+package veganaize.android.pdfview;
 
 import java.io.File;
 

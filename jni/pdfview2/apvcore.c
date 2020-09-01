@@ -321,8 +321,8 @@ pdf_t* parse_pdf_bytes(unsigned char *bytes, size_t len, jstring box_name) {
     pdf->xref = pdf_newxref();
     error = pdf_loadxref_mem(pdf->xref, bytes, len);
     if (error) {
-        __android_log_print(ANDROID_LOG_ERROR, "cx.hell.android.pdfview", "got err from pdf_loadxref_mem: %d", (int)error);
-        __android_log_print(ANDROID_LOG_ERROR, "cx.hell.android.pdfview", "fz errors:\n%s", fz_errorbuf);
+        __android_log_print(ANDROID_LOG_ERROR, "veganaize.android.pdfview", "got err from pdf_loadxref_mem: %d", (int)error);
+        __android_log_print(ANDROID_LOG_ERROR, "veganaize.android.pdfview", "fz errors:\n%s", fz_errorbuf);
         /* TODO: free resources */
         return NULL;
     }
@@ -337,7 +337,7 @@ pdf_t* parse_pdf_bytes(unsigned char *bytes, size_t len, jstring box_name) {
         authenticated = pdf_authenticatepassword(pdf->xref, "");
         if (!authenticated) {
             /* TODO: ask for password */
-            __android_log_print(ANDROID_LOG_ERROR, "cx.hell.android.pdfview", "failed to authenticate with empty password");
+            __android_log_print(ANDROID_LOG_ERROR, "veganaize.android.pdfview", "failed to authenticate with empty password");
             return NULL;
         }
     }

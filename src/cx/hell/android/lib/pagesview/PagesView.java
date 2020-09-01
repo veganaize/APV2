@@ -1,4 +1,4 @@
-package cx.hell.android.lib.pagesview;
+package veganaize.android.lib.pagesview;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -25,12 +25,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Scroller;
-import cx.hell.android.pdfview.Actions;
-import cx.hell.android.pdfview.AndroidReflections;
-import cx.hell.android.pdfview.Bookmark;
-import cx.hell.android.pdfview.BookmarkEntry;
-import cx.hell.android.pdfview.OpenFileActivity;
-import cx.hell.android.pdfview.Options;
+import veganaize.android.pdfview.Actions;
+import veganaize.android.pdfview.AndroidReflections;
+import veganaize.android.pdfview.Bookmark;
+import veganaize.android.pdfview.BookmarkEntry;
+import veganaize.android.pdfview.OpenFileActivity;
+import veganaize.android.pdfview.Options;
 
 /**
  * View that simplifies displaying of paged documents.
@@ -42,7 +42,7 @@ public class PagesView extends View implements
 	/**
 	 * Logging tag.
 	 */
-	private static final String TAG = "cx.hell.android.pdfview";
+	private static final String TAG = "veganaize.android.pdfview";
 	
 	/* Experiments show that larger tiles are faster, but the gains do drop off,
 	 * and must be balanced against the size of memory chunks being requested.
@@ -528,7 +528,7 @@ public class PagesView extends View implements
 		if (this.scroller.computeScrollOffset()) {
 			left = this.scroller.getCurrX();
 			top = this.scroller.getCurrY();
-			((cx.hell.android.pdfview.OpenFileActivity)activity).showPageNumber(false);
+			((veganaize.android.pdfview.OpenFileActivity)activity).showPageNumber(false);
 			postInvalidate();
 		}
 	}
@@ -894,7 +894,7 @@ public class PagesView extends View implements
 			
 			switch (keyCode) {
 			case KeyEvent.KEYCODE_SEARCH:
-				((cx.hell.android.pdfview.OpenFileActivity)activity).showFindDialog();
+				((veganaize.android.pdfview.OpenFileActivity)activity).showFindDialog();
 				return true;
 			case KeyEvent.KEYCODE_VOLUME_DOWN:
 				if (action == Actions.ACTION_NONE)

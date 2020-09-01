@@ -1,4 +1,4 @@
-package cx.hell.android.pdfview;
+package veganaize.android.pdfview;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -39,7 +39,7 @@ public class ChooseFileActivity extends FragmentActivity implements OnItemClickL
 	/**
 	 * Logging tag.
 	 */
-	private final static String TAG = "cx.hell.android.pdfview";
+	private final static String TAG = "veganaize.android.pdfview";
 	private final static String PREF_TAG = "ChooseFileActivity";
 	private final static String PREF_HOME = "Home";
 	

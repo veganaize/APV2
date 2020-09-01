@@ -1,4 +1,4 @@
-package cx.hell.android.pdfview;
+package veganaize.android.pdfview;
 
 public class BookmarkEntry implements Comparable<BookmarkEntry> {
 	public int numberOfPages;

@@ -1,4 +1,4 @@
-package cx.hell.android.pdfview;
+package veganaize.android.pdfview;
 
 import java.io.File;
 import java.io.FileDescriptor;
@@ -51,9 +51,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import cx.hell.android.lib.pagesview.FindResult;
-import cx.hell.android.lib.pagesview.PagesView;
-import cx.hell.android.lib.pdf.PDF;
+import veganaize.android.lib.pagesview.FindResult;
+import veganaize.android.lib.pagesview.PagesView;
+import veganaize.android.lib.pdf.PDF;
 
 // #ifdef pro
 // import java.util.Map;
@@ -62,8 +62,8 @@ import cx.hell.android.lib.pdf.PDF;
 // import android.widget.ScrollView;
 // import android.widget.AdapterView;
 // import android.widget.AdapterView.OnItemClickListener;
-// import cx.hell.android.lib.pdf.PDF.Outline;
-// import cx.hell.android.lib.view.TreeView;
+// import veganaize.android.lib.pdf.PDF.Outline;
+// import veganaize.android.lib.view.TreeView;
 // #endif
 
 
@@ -72,7 +72,7 @@ import cx.hell.android.lib.pdf.PDF;
  */
 public class OpenFileActivity extends Activity implements SensorEventListener {
 
-	private final static String TAG = "cx.hell.android.pdfview";
+	private final static String TAG = "veganaize.android.pdfview";
 	
 	private final static int[] zoomAnimations = {
 		R.anim.zoom_disappear, R.anim.zoom_almost_disappear, R.anim.zoom

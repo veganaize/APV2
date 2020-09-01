@@ -11,7 +11,7 @@
 #include "mupdf-internal.h"
 
 
-#define PDFVIEW_LOG_TAG "cx.hell.android.pdfview"
+#define PDFVIEW_LOG_TAG "veganaize.android.pdfview"
 
 static JavaVM *cached_jvm = NULL;
 
@@ -741,7 +741,7 @@ pdf_t* get_pdf_from_this(JNIEnv *env, jobject this) {
         jclass this_class = (*env)->GetObjectClass(env, this);
         field_id = (*env)->GetFieldID(env, this_class, "pdf_ptr", "I");
         field_is_cached = 1;
-        __android_log_print(ANDROID_LOG_DEBUG, "cx.hell.android.pdfview", "cached pdf_ptr field id %d", (int)field_id);
+        __android_log_print(ANDROID_LOG_DEBUG, "veganaize.android.pdfview", "cached pdf_ptr field id %d", (int)field_id);
     }
 	pdf = (pdf_t*) (*env)->GetIntField(env, this, field_id);
     return pdf;
@@ -766,9 +766,9 @@ int get_descriptor_from_file_descriptor(JNIEnv *env, jobject this) {
         jclass this_class = (*env)->GetObjectClass(env, this);
         field_id = (*env)->GetFieldID(env, this_class, "descriptor", "I");
         is_cached = 1;
-        __android_log_print(ANDROID_LOG_DEBUG, "cx.hell.android.pdfview", "cached descriptor field id %d", (int)field_id);
+        __android_log_print(ANDROID_LOG_DEBUG, "veganaize.android.pdfview", "cached descriptor field id %d", (int)field_id);
     }
-    // __android_log_print(ANDROID_LOG_DEBUG, "cx.hell.android.pdfview", "will get descriptor field...");
+    // __android_log_print(ANDROID_LOG_DEBUG, "veganaize.android.pdfview", "will get descriptor field...");
     return (*env)->GetIntField(env, this, field_id);
 }
 
@@ -782,7 +782,7 @@ void get_size(JNIEnv *env, jobject size, int *width, int *height) {
         width_field_id = (*env)->GetFieldID(env, size_class, "width", "I");
         height_field_id = (*env)->GetFieldID(env, size_class, "height", "I");
         fields_are_cached = 1;
-        __android_log_print(ANDROID_LOG_DEBUG, "cx.hell.android.pdfview", "cached Size fields");
+        __android_log_print(ANDROID_LOG_DEBUG, "veganaize.android.pdfview", "cached Size fields");
     }
     *width = (*env)->GetIntField(env, size, width_field_id);
     *height = (*env)->GetIntField(env, size, height_field_id);
@@ -805,7 +805,7 @@ void save_size(JNIEnv *env, jobject size, int width, int height) {
         width_field_id = (*env)->GetFieldID(env, size_class, "width", "I");
         height_field_id = (*env)->GetFieldID(env, size_class, "height", "I");
         fields_are_cached = 1;
-        __android_log_print(ANDROID_LOG_DEBUG, "cx.hell.android.pdfview", "cached Size fields");
+        __android_log_print(ANDROID_LOG_DEBUG, "veganaize.android.pdfview", "cached Size fields");
     }
     (*env)->SetIntField(env, size, width_field_id, width);
     (*env)->SetIntField(env, size, height_field_id, height);
@@ -832,8 +832,8 @@ pdf_t* parse_pdf_bytes(unsigned char *bytes, size_t len, jstring box_name) {
     pdf->xref = pdf_newxref();
     error = pdf_loadxref_mem(pdf->xref, bytes, len);
     if (error) {
-        __android_log_print(ANDROID_LOG_ERROR, "cx.hell.android.pdfview", "got err from pdf_loadxref_mem: %d", (int)error);
-        __android_log_print(ANDROID_LOG_ERROR, "cx.hell.android.pdfview", "fz errors:\n%s", fz_errorbuf);
+        __android_log_print(ANDROID_LOG_ERROR, "veganaize.android.pdfview", "got err from pdf_loadxref_mem: %d", (int)error);
+        __android_log_print(ANDROID_LOG_ERROR, "veganaize.android.pdfview", "fz errors:\n%s", fz_errorbuf);
         /* TODO: free resources */
         return NULL;
     }
@@ -848,7 +848,7 @@ pdf_t* parse_pdf_bytes(unsigned char *bytes, size_t len, jstring box_name) {
         authenticated = pdf_authenticatepassword(pdf->xref, "");
         if (!authenticated) {
             /* TODO: ask for password */
-            __android_log_print(ANDROID_LOG_ERROR, "cx.hell.android.pdfview", "failed to authenticate with empty password");
+            __android_log_print(ANDROID_LOG_ERROR, "veganaize.android.pdfview", "failed to authenticate with empty password");
             return NULL;
         }
     }

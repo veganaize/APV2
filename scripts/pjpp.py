@@ -17,15 +17,15 @@ package_dirs = {
 
 file_replaces = {
     'lite': (
-        'cx.hell.android.pdfview.',
-        '"cx.hell.android.pdfview"',
-        'package cx.hell.android.pdfview;',
+        'veganaize.android.pdfview.',
+        '"veganaize.android.pdfview"',
+        'package veganaize.android.pdfview;',
         'android:icon="@drawable/pdfviewer"',
     ),
     'pro': (
-        'cx.hell.android.pdfviewpro.',
-        '"cx.hell.android.pdfviewpro"',
-        'package cx.hell.android.pdfviewpro;',
+        'veganaize.android.pdfviewpro.',
+        '"veganaize.android.pdfviewpro"',
+        'package veganaize.android.pdfviewpro;',
         'android:icon="@drawable/apvpro_icon"',
     ),
 }

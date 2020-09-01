@@ -1,4 +1,4 @@
-package cx.hell.android.pdfview;
+package veganaize.android.pdfview;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -20,7 +20,7 @@ import android.view.ViewConfiguration;
 final public class AndroidReflections {
 	
 // #ifdef pro
-// 	private final static String TAG = "cx.hell.android.pdfview";
+// 	private final static String TAG = "veganaize.android.pdfview";
 // 
 // 	public static void setScrollbarFadingEnabled(View view, boolean fadeScrollbars) {
 // 		Class<View> viewClass = View.class;

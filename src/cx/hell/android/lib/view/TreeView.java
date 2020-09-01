@@ -1,4 +1,4 @@
-package cx.hell.android.lib.view;
+package veganaize.android.lib.view;
 
 // #ifdef pro
 // 
@@ -18,12 +18,12 @@ package cx.hell.android.lib.view;
 // import android.widget.LinearLayout;
 // import android.widget.ListView;
 // import android.widget.TextView;
-// import cx.hell.android.pdfview.R;
+// import veganaize.android.pdfview.R;
 // 
 // /**
 //  * Simple tree view used by APV for Table of Contents.
 //  * 
-//  * This class' package is cx.hell.android.lib.view, since TreeView might be reusable in other projects.
+//  * This class' package is veganaize.android.lib.view, since TreeView might be reusable in other projects.
 //  * 
 //  * TODO: move data handling (getItemAtPosition) from TreeView to TreeAdapter,
 //  * 	     as it should be; TreeView should query TreeAdapter, not other way around :/
@@ -31,7 +31,7 @@ package cx.hell.android.lib.view;
 //  */
 // public class TreeView extends ListView {
 // 	
-// 	public final static String TAG = "cx.hell.android.lib.view";
+// 	public final static String TAG = "veganaize.android.lib.view";
 // 	
 // 	/**
 // 	 * Tree node model. Contains links to first child and to next element.

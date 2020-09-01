@@ -1,4 +1,4 @@
-package cx.hell.android.pdfview;
+package veganaize.android.pdfview;
 
 import android.content.SharedPreferences;
 import android.view.KeyEvent;

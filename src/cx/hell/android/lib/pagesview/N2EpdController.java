@@ -1,4 +1,4 @@
-package cx.hell.android.lib.pagesview;
+package veganaize.android.lib.pagesview;
 
 // you're encouraged to use this piece of code for anything, either commercial or free, 
 // either close-sourced or open-sourced.  However, do put a line in your "About" section 

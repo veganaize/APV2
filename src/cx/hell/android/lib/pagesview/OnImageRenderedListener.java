@@ -1,4 +1,4 @@
-package cx.hell.android.lib.pagesview;
+package veganaize.android.lib.pagesview;
 
 import java.util.Map;
 

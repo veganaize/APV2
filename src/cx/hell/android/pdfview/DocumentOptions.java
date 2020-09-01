@@ -1,4 +1,4 @@
-package cx.hell.android.pdfview;
+package veganaize.android.pdfview;
 
 // #ifdef pro
 // 
@@ -23,7 +23,7 @@ package cx.hell.android.pdfview;
 //  */
 // public class DocumentOptions {
 // 	
-// 	private final static String TAG = "cx.hell.android.pdfview";
+// 	private final static String TAG = "veganaize.android.pdfview";
 // 	
 //	/**
 //	 * Database holds at most this many documents.

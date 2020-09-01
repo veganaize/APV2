@@ -1,4 +1,4 @@
-package cx.hell.android.lib.pdf;
+package veganaize.android.lib.pdf;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -15,13 +15,13 @@ import android.content.res.AssetManager;
 import android.util.Log;
 import android.os.ParcelFileDescriptor;
 
-import cx.hell.android.lib.pagesview.FindResult;
+import veganaize.android.lib.pagesview.FindResult;
 
 // #ifdef pro
 // import java.util.ArrayList;
 // import java.util.Stack;
-// import cx.hell.android.lib.view.TreeView;
-// import cx.hell.android.lib.view.TreeView.TreeNode;
+// import veganaize.android.lib.view.TreeView;
+// import veganaize.android.lib.view.TreeView.TreeNode;
 // #endif
 
 
@@ -30,7 +30,7 @@ import cx.hell.android.lib.pagesview.FindResult;
  */
 public class PDF {
 	
-	private final static String TAG = "cx.hell.android.pdfview";
+	private final static String TAG = "veganaize.android.pdfview";
 	
 	private static Map<String,String> fontNameToFile = null;
 	

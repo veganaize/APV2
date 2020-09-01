@@ -1,4 +1,4 @@
-package cx.hell.android.pdfview;
+package veganaize.android.pdfview;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -11,11 +11,11 @@ import java.util.Map;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.util.Log;
-import cx.hell.android.lib.pagesview.OnImageRenderedListener;
-import cx.hell.android.lib.pagesview.PagesProvider;
-import cx.hell.android.lib.pagesview.RenderingException;
-import cx.hell.android.lib.pagesview.Tile;
-import cx.hell.android.lib.pdf.PDF;
+import veganaize.android.lib.pagesview.OnImageRenderedListener;
+import veganaize.android.lib.pagesview.PagesProvider;
+import veganaize.android.lib.pagesview.RenderingException;
+import veganaize.android.lib.pagesview.Tile;
+import veganaize.android.lib.pdf.PDF;
 
 /**
  * Provide rendered bitmaps of pages.
@@ -25,7 +25,7 @@ public class PDFPagesProvider extends PagesProvider {
 	/**
 	 * Const used by logging.
 	 */
-	private final static String TAG = "cx.hell.android.pdfview";
+	private final static String TAG = "veganaize.android.pdfview";
 
 	/* render a little more than twice the screen height, so the next page will be ready */
 	private float renderAhead = 2.1f;
@@ -166,7 +166,7 @@ public class PDFPagesProvider extends PagesProvider {
 				this.misses += 1;
 			}
 			if ((this.hits + this.misses) % 100 == 0 && (this.hits > 0 || this.misses > 0)) {
-				Log.d("cx.hell.android.pdfview.pagecache", "hits: " + hits + ", misses: " + misses + ", hit ratio: " + (float)(hits) / (float)(hits+misses) +
+				Log.d("veganaize.android.pdfview.pagecache", "hits: " + hits + ", misses: " + misses + ", hit ratio: " + (float)(hits) / (float)(hits+misses) +
 						", size: " + this.bitmaps.size());
 			}
 			return b;
